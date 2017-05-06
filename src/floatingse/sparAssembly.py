@@ -83,7 +83,7 @@ class sparAssembly(Assembly):
     def configure(self):
         if OPTIMIZE:
             self.add('driver',COBYLAdriver())
-            self.driver.maxfun = 100000
+            self.driver.maxfun = 20
 
         # select components
         self.add('tower_RNA',Tower_RNA())
